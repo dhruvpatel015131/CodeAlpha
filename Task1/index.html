@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+header.scrolled {
+    background: #222;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+section#home {
+    background: #f4f4f4;
+    padding: 5rem 2rem;
+}
+
+section#about {
+    background: #e0e0e0;
+    text-align: left;
+}
+
+section#about h2 {
+    text-align: center;
+}
+
+section#about p {
+    max-width: 800px;
+    margin: 1rem auto;
+    line-height: 1.8;
+}
+
+section#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#skills ul li {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+section#projects .project {
+    margin: 2rem 0;
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#projects h3 {
+    margin-top: 0;
+}
+
+section#contact {
+    background: #f4f4f4;
+    padding-bottom: 5rem; /* Adjust this value as needed */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+form button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #555;
+}
+
+section#skills ul li {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+section#skills ul li:hover {
+    background: #555;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+section#projects .project {
+    margin: 2rem 0;
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section#projects .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Dhruv Manohar Patel pursuing MCA.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am currently pursuing my Master of Computer Applications (MCA) at Finolex Academy of Management and Technology in Ratnagiri. I am in the third semester of my program. The journey so far has been both challenging and rewarding, providing me with a strong foundation in computer science and applications. At Finolex, I have had the opportunity to engage with a diverse curriculum that includes advanced programming, database management, software engineering, and various other aspects of technology.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>.NET</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Cake Shop Management Php</h3>
+            <p>This project involves creating a comprehensive management system for a cake shop using PHP and MySQL. The system allows the shop to manage inventory, track orders, handle customer information, and generate sales reports. It features user authentication, a responsive user interface, and a robust backend to ensure smooth operation.</p>
+        </div>
+        <div class="project">
+            <h3>Mobile Shop Management</h3>
+            <p>A web-based application developed using React to manage a mobile shop's operations efficiently, featuring product management, sales tracking, customer relationship management, and inventory control, leveraging React's component-based architecture for a dynamic and responsive user experience.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dhruv Manohar Patel. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+        });
+
+    window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    header.classList.toggle('scrolled', window.scrollY > 0);
+    });
+    </script>
+</body>
+</html>
